@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoKaraParser", "NicoKaraParser\NicoKaraParser.csproj", "{07BEC501-3402-419E-B04D-92FC319E565D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoKaraParser.Tests", "NicoKaraParser.Tests\NicoKaraParser.Tests.csproj", "{F834ED71-6EC4-489C-A566-7078B20EFE4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{07BEC501-3402-419E-B04D-92FC319E565D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07BEC501-3402-419E-B04D-92FC319E565D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07BEC501-3402-419E-B04D-92FC319E565D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F834ED71-6EC4-489C-A566-7078B20EFE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F834ED71-6EC4-489C-A566-7078B20EFE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F834ED71-6EC4-489C-A566-7078B20EFE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F834ED71-6EC4-489C-A566-7078B20EFE4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
