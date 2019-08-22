@@ -6,8 +6,8 @@ namespace NicoKaraParser.Model
     public class ShadowSlide
     {
         [XmlElement(ElementName = "X")]
-        public string X { get; set; }
+        public int X { get; set; }
         [XmlElement(ElementName = "Y")]
-        public string Y { get; set; }
+        public int Y { get; set; }
     }
 }

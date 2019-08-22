@@ -6,11 +6,14 @@ namespace NicoKaraParser.Model
     public class BrushInfo
     {
         [XmlElement(ElementName = "Type")]
-        public string Type { get; set; }
+        public BrushType Type { get; set; }
+
         [XmlElement(ElementName = "GradientPositions")]
         public GradientPositions GradientPositions { get; set; }
+
         [XmlElement(ElementName = "SolidColorSave")]
-        public string SolidColorSave { get; set; }
+        public int SolidColorSave { get; set; }
+
         [XmlElement(ElementName = "GradientColorsSave")]
         public GradientColorsSave GradientColorsSave { get; set; }
     }

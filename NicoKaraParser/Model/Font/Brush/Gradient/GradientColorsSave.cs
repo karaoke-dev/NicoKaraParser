@@ -7,6 +7,6 @@ namespace NicoKaraParser.Model
     public class GradientColorsSave
     {
         [XmlElement(ElementName = "int")]
-        public List<string> Int { get; set; }
+        public List<int> Int { get; set; }
     }
 }

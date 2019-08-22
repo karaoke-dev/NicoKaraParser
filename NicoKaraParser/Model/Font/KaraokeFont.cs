@@ -12,7 +12,7 @@ namespace NicoKaraParser.Model
         [XmlElement(ElementName = "FontInfos")]
         public FontInfos FontInfos { get; set; }
         [XmlElement(ElementName = "UseShadow")]
-        public string UseShadow { get; set; }
+        public bool UseShadow { get; set; }
         [XmlElement(ElementName = "ShadowSlide")]
         public ShadowSlide ShadowSlide { get; set; }
     }

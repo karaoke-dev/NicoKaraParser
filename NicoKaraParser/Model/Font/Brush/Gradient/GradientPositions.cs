@@ -7,6 +7,6 @@ namespace NicoKaraParser.Model
     public class GradientPositions
     {
         [XmlElement(ElementName = "float")]
-        public List<string> Float { get; set; }
+        public List<float> Float { get; set; }
     }
 }
