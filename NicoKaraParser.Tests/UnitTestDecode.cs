@@ -3,10 +3,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace NicoKaraParser.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestDecode
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Decode()
         {
         }
     }
