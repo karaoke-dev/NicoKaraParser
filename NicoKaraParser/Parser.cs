@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 namespace NicoKaraParser
 {
-    public class Parser : XmlSerializer<ProjectSettings>
+    public class Parser : XmlSerializer<Project>
     {
 
     }

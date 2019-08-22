@@ -16,7 +16,7 @@ namespace NicoKaraParser.Tests
             Parser = new Parser();
         }
 
-        protected virtual ProjectSettings DecodeWithFile()
+        protected virtual Project DecodeWithFile()
         {
             var path = "Resources/" + ResourseFilePath;
             var fileExist = File.Exists(path);
@@ -25,7 +25,7 @@ namespace NicoKaraParser.Tests
 
             using (var sr = new StreamReader(path))
             {
-                return Parser.Deserialize(sr) as ProjectSettings;
+                return Parser.Deserialize(sr) as Project;
             }
         }
     }

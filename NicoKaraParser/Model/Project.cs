@@ -3,13 +3,13 @@
 namespace NicoKaraParser.Model
 {
     [XmlRoot(ElementName = "ProjectSettings")]
-    public class ProjectSettings
+    public class Project
     {
         [XmlElement(ElementName = "AppVer")]
         public string AppVer { get; set; }
 
         [XmlElement(ElementName = "IsDefaultStyleNeeded")]
-        public string IsDefaultStyleNeeded { get; set; }
+        public bool IsDefaultStyleNeeded { get; set; }
 
         [XmlElement(ElementName = "LyricsPath")]
         public string LyricsPath { get; set; }
@@ -33,7 +33,7 @@ namespace NicoKaraParser.Model
         public string DestFormat { get; set; }
 
         [XmlElement(ElementName = "DoubleFrame")]
-        public string DoubleFrame { get; set; }
+        public bool DoubleFrame { get; set; }
 
         [XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2000/xmlns/")]
         public string Xsi { get; set; }
