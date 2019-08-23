@@ -23,7 +23,7 @@
           </GradientColorsSave>
         </BrushInfo>
         <BrushInfo>
-          <Type>Solid</Type>
+          <Type>Gradient</Type>
           <GradientPositions>
             <float>0</float>
             <float>0.5</float>
@@ -37,7 +37,7 @@
           </GradientColorsSave>
         </BrushInfo>
         <BrushInfo>
-          <Type>Solid</Type>
+          <Type>MilleFeuille</Type>
           <GradientPositions>
             <float>0</float>
             <float>0.5</float>
@@ -96,7 +96,7 @@
       <FontInfos>
         <FontInfo>
           <FontName>游明朝 Demibold</FontName>
-          <FontStyle>Bold</FontStyle>
+          <FontStyle>Regular</FontStyle>
           <CharSize>40</CharSize>
           <EdgeSize>10</EdgeSize>
         </FontInfo>
@@ -1247,7 +1247,7 @@
       <FontInfos>
         <FontInfo>
           <FontName>游明朝 Demibold</FontName>
-          <FontStyle>Bold</FontStyle>
+          <FontStyle>Regular</FontStyle>
           <CharSize>40</CharSize>
           <EdgeSize>10</EdgeSize>
         </FontInfo>

@@ -8,6 +8,9 @@ namespace NicoKaraParser.Model
         Solid,
 
         [XmlEnum("Gradient")]
-        Gradient
+        Gradient,
+
+        [XmlEnum("MilleFeuille")]
+        MilleFeuille
     }
 }

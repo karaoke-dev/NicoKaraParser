@@ -7,11 +7,14 @@ namespace NicoKaraParser.Model
     {
         [XmlElement(ElementName = "FontName")]
         public string FontName { get; set; }
+
         [XmlElement(ElementName = "FontStyle")]
-        public string FontStyle { get; set; }
+        public FontStyle FontStyle { get; set; }
+
         [XmlElement(ElementName = "CharSize")]
-        public string CharSize { get; set; }
+        public int CharSize { get; set; }
+
         [XmlElement(ElementName = "EdgeSize")]
-        public string EdgeSize { get; set; }
+        public int EdgeSize { get; set; }
     }
 }
