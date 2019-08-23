@@ -8,7 +8,7 @@ namespace NicoKaraParser.Tests
     public class TestCaseLayout : BaseUnitTest
     {
         [TestMethod]
-        public void CheckLayout()
+        public void TestLayout()
         {
             var result = DecodeWithFile();
             var firstLayout = result.KaraokeLayouts.KaraokeLayout.FirstOrDefault();

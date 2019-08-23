@@ -42,7 +42,7 @@ namespace NicoKaraParser.Tests
             // Check type
             Assert.AreEqual(brushInfos[0].Type, BrushType.Solid);
             Assert.AreEqual(brushInfos[1].Type, BrushType.Gradient);
-            Assert.AreEqual(brushInfos[2].Type, BrushType.Solid);
+            Assert.AreEqual(brushInfos[2].Type, BrushType.MilleFeuille);
 
             // Now testing first brush info
             var firstBrushInfo = brushInfos[0];
