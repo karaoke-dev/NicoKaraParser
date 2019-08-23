@@ -6,9 +6,11 @@ namespace NicoKaraParser.Model
     public class LyricsPart
     {
         [XmlElement(ElementName = "BeginTime")]
-        public string BeginTime { get; set; }
+        public int BeginTime { get; set; }
+
         [XmlElement(ElementName = "EndTime")]
-        public string EndTime { get; set; }
+        public int EndTime { get; set; }
+
         [XmlElement(ElementName = "Lyrics")]
         public string Lyrics { get; set; }
     }

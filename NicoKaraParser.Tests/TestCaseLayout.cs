@@ -34,7 +34,7 @@ namespace NicoKaraParser.Tests
             // Lyric
             Assert.AreEqual(firstLayout.LyricsInterval, 4);
 
-            //Ruby
+            // Ruby
             Assert.AreEqual(firstLayout.RubyInterval, 2);
             Assert.AreEqual(firstLayout.RubyAlignment, RubyAlignment.EqualSpace);
             Assert.AreEqual(firstLayout.RubyMargin, 4);
