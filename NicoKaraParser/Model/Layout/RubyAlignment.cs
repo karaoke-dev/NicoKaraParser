@@ -2,15 +2,15 @@
 
 namespace NicoKaraParser.Model
 {
-    public enum HorizontalAlignment
+    public enum RubyAlignment
     {
-        [XmlEnum("Left")]
-        Left,
+        [XmlEnum("Auto")]
+        Auto,
 
         [XmlEnum("Center")]
         Center,
 
-        [XmlEnum("Right")]
-        Right,
+        [XmlEnum("EqualSpace")]
+        EqualSpace
     }
 }

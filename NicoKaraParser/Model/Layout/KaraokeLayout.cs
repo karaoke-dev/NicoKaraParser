@@ -18,7 +18,7 @@ namespace NicoKaraParser.Model
         public int HorizontalMargin { get; set; }
 
         [XmlElement(ElementName = "SmartHorizon")]
-        public string SmartHorizon { get; set; }
+        public SmartHorizon SmartHorizon { get; set; }
 
         [XmlElement(ElementName = "VerticalAlignment")]
         public VerticalAlignment VerticalAlignment { get; set; }
@@ -33,7 +33,7 @@ namespace NicoKaraParser.Model
         public int RubyInterval { get; set; }
 
         [XmlElement(ElementName = "RubyAlignment")]
-        public string RubyAlignment { get; set; }
+        public RubyAlignment RubyAlignment { get; set; }
 
         [XmlElement(ElementName = "RubyMargin")]
         public int RubyMargin { get; set; }

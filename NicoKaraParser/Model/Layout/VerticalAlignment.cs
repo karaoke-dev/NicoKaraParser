@@ -7,8 +7,8 @@ namespace NicoKaraParser.Model
         [XmlEnum("Top")]
         Top,
 
-        [XmlEnum("Center")]
-        Center,
+        [XmlEnum("Middle")]
+        Middle,
 
         [XmlEnum("Bottom")]
         Bottom,

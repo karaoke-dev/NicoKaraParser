@@ -1290,12 +1290,12 @@
       <Continuous>false</Continuous>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <HorizontalMargin>30</HorizontalMargin>
-      <SmartHorizon>Multi</SmartHorizon>
+      <SmartHorizon>Single</SmartHorizon>
       <VerticalAlignment>Bottom</VerticalAlignment>
       <VerticalMargin>45</VerticalMargin>
       <LyricsInterval>4</LyricsInterval>
       <RubyInterval>2</RubyInterval>
-      <RubyAlignment>Auto</RubyAlignment>
+      <RubyAlignment>EqualSpace</RubyAlignment>
       <RubyMargin>4</RubyMargin>
     </KaraokeLayout>
     <KaraokeLayout>
