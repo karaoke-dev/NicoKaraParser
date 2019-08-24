@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Drawing;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NicoKaraParser.Model;
 using System.Linq;
 
@@ -47,15 +48,18 @@ namespace NicoKaraParser.Tests
             // Now testing first brush info
             var firstBrushInfo = brushInfos[0];
             var positionCount = firstBrushInfo.GradientPositions.Count();
-            var colorCount = firstBrushInfo.GradientColorsSave.Count();
+            var colorCount = firstBrushInfo.GradientColors.Count();
 
             // Position and color should be equal or greater then 2
             Assert.IsTrue(positionCount >= 2);
             Assert.IsTrue(colorCount >= 2);
             Assert.AreEqual(positionCount, colorCount);
 
-            // Brush info should be 6
-            Assert.AreEqual(firstBrushInfo.SolidColorSave, -65281);
+            // Check color
+            Assert.AreEqual(firstBrushInfo.GradientColors[0], Color.FromArgb(255, 128, 128, 128));
+
+            // Check solid color
+            Assert.AreEqual(firstBrushInfo.SolidColor, Color.FromArgb(255, 255, 0, 255));
         }
 
         [TestMethod]
