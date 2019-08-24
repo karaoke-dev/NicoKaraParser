@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace NicoKaraParser.Model
 {
@@ -8,14 +9,14 @@ namespace NicoKaraParser.Model
         [XmlElement(ElementName = "Type")]
         public BrushType Type { get; set; }
 
-        [XmlElement(ElementName = "GradientPositions")]
-        public GradientPositions GradientPositions { get; set; }
+        [XmlArray(ElementName = "GradientPositions")]
+        public List<float> GradientPositions { get; set; }
 
         [XmlElement(ElementName = "SolidColorSave")]
         public int SolidColorSave { get; set; }
 
-        [XmlElement(ElementName = "GradientColorsSave")]
-        public GradientColorsSave GradientColorsSave { get; set; }
+        [XmlArray(ElementName = "GradientColorsSave")]
+        public List<int> GradientColorsSave { get; set; }
     }
 
 }

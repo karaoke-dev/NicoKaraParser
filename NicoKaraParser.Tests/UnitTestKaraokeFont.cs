@@ -46,8 +46,8 @@ namespace NicoKaraParser.Tests
 
             // Now testing first brush info
             var firstBrushInfo = brushInfos[0];
-            var positionCount = firstBrushInfo.GradientPositions.Float.Count();
-            var colorCount = firstBrushInfo.GradientColorsSave.Int.Count();
+            var positionCount = firstBrushInfo.GradientPositions.Count();
+            var colorCount = firstBrushInfo.GradientColorsSave.Count();
 
             // Position and color should be equal or greater then 2
             Assert.IsTrue(positionCount >= 2);
