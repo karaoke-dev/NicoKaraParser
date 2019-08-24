@@ -11,7 +11,7 @@ namespace NicoKaraParser.Tests
         public void CheckKaraokeFont()
         {
             var result = DecodeWithFile();
-            var fonts = result.KaraokeFonts.KaraokeFont;
+            var fonts = result.KaraokeFonts;
             var firstFont = fonts.FirstOrDefault();
 
             // Check has at least one font
@@ -21,10 +21,10 @@ namespace NicoKaraParser.Tests
             Assert.AreEqual(firstFont.Name, "標準配色");
 
             // Brush info should be 6
-            Assert.AreEqual(firstFont.BrushInfos.BrushInfo.Count(), 6);
+            Assert.AreEqual(firstFont.BrushInfos.Count(), 6);
 
             // Font info should be 6
-            Assert.AreEqual(firstFont.FontInfos.FontInfo.Count(), 6);
+            Assert.AreEqual(firstFont.FontInfos.Count(), 6);
 
             // Shadow
             Assert.AreEqual(firstFont.UseShadow, true);
@@ -36,8 +36,8 @@ namespace NicoKaraParser.Tests
         public void CheckKaraokeFontBrushInfo()
         {
             var result = DecodeWithFile();
-            var fonts = result.KaraokeFonts.KaraokeFont;
-            var brushInfos = fonts.FirstOrDefault().BrushInfos.BrushInfo;
+            var fonts = result.KaraokeFonts;
+            var brushInfos = fonts.FirstOrDefault().BrushInfos;
 
             // Check type
             Assert.AreEqual(brushInfos[0].Type, BrushType.Solid);
@@ -62,8 +62,8 @@ namespace NicoKaraParser.Tests
         public void CheckKaraokeFontFontInfo()
         {
             var result = DecodeWithFile();
-            var fonts = result.KaraokeFonts.KaraokeFont;
-            var fontInfos = fonts.FirstOrDefault().FontInfos.FontInfo;
+            var fonts = result.KaraokeFonts;
+            var fontInfos = fonts.FirstOrDefault().FontInfos;
 
             // Check type
             Assert.AreEqual(fontInfos[0].FontName, "游明朝 Demibold");

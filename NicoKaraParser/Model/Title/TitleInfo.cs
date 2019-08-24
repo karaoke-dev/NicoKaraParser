@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace NicoKaraParser.Model
 {
@@ -23,7 +24,7 @@ namespace NicoKaraParser.Model
         [XmlElement(ElementName = "ShowRuby")]
         public bool ShowRuby { get; set; }
 
-        [XmlElement(ElementName = "TitleStyles")]
-        public TitleStyles TitleStyles { get; set; }
+        [XmlArray(ElementName = "TitleStyles")]
+        public List<TitleStyle> TitleStyles { get; set; }
     }
 }

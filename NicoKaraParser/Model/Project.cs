@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace NicoKaraParser.Model
 {
@@ -17,17 +18,17 @@ namespace NicoKaraParser.Model
         [XmlElement(ElementName = "LyricsRelativePath")]
         public string LyricsRelativePath { get; set; }
 
-        [XmlElement(ElementName = "KaraokeFonts")]
-        public KaraokeFonts KaraokeFonts { get; set; }
+        [XmlArray(ElementName = "KaraokeFonts")]
+        public List<KaraokeFont> KaraokeFonts { get; set; }
 
-        [XmlElement(ElementName = "KaraokeLayouts")]
-        public KaraokeLayouts KaraokeLayouts { get; set; }
+        [XmlArray(ElementName = "KaraokeLayouts")]
+        public List<KaraokeLayout> KaraokeLayouts { get; set; }
 
-        [XmlElement(ElementName = "KaraokeStyles")]
-        public KaraokeStyles KaraokeStyles { get; set; }
+        [XmlArray(ElementName = "KaraokeStyles")]
+        public List<KaraokeStyle> KaraokeStyles { get; set; }
 
-        [XmlElement(ElementName = "TitleInfos")]
-        public TitleInfos TitleInfos { get; set; }
+        [XmlArray(ElementName = "TitleInfos")]
+        public List<TitleInfo> TitleInfos { get; set; }
 
         [XmlElement(ElementName = "DestFormat")]
         public string DestFormat { get; set; }

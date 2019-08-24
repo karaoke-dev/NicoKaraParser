@@ -11,7 +11,7 @@ namespace NicoKaraParser.Tests
         public void CheckStyle()
         {
             var result = DecodeWithFile();
-            var styles = result.KaraokeStyles.KaraokeStyle;
+            var styles = result.KaraokeStyles;
             var firstStyle = styles.FirstOrDefault();
 
             // Check has at least one font
@@ -29,8 +29,8 @@ namespace NicoKaraParser.Tests
             Assert.AreEqual(firstStyle.KaraokeLayoutIndex, 1);
 
             // Part and rubies
-            Assert.IsTrue(firstStyle.LyricsParts.LyricsPart.Any());
-            Assert.IsTrue(firstStyle.ApplyRubies.RubyInfo.Any());
+            Assert.IsTrue(firstStyle.LyricsParts.Any());
+            Assert.IsTrue(firstStyle.ApplyRubies.Any());
 
             // Lyric and it's position in file
             Assert.AreEqual(firstStyle.PlainText, "…上座の上にある　上着を、");

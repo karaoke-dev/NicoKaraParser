@@ -10,7 +10,7 @@ namespace NicoKaraParser.Tests
         public void TestTitle()
         {
             var result = DecodeWithFile();
-            var firstTitle = result.TitleInfos.TitleInfo.FirstOrDefault();
+            var firstTitle = result.TitleInfos.FirstOrDefault();
 
             // Check has at least one font
             Assert.IsNotNull(firstTitle);
@@ -26,8 +26,7 @@ namespace NicoKaraParser.Tests
             Assert.AreEqual(firstTitle.ShowRuby, false);
 
             // Title style
-            var titleStyles = firstTitle.TitleStyles.TitleStyle;
-            var fiestTitleStyle = titleStyles.FirstOrDefault();
+            var fiestTitleStyle = firstTitle.TitleStyles.FirstOrDefault();
 
             // Check first title style
             Assert.AreEqual(fiestTitleStyle.Title, "@Title / @Artist");

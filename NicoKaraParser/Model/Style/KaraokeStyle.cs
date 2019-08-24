@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace NicoKaraParser.Model
 {
@@ -14,11 +15,11 @@ namespace NicoKaraParser.Model
         [XmlElement(ElementName = "ShowEndTime")]
         public int ShowEndTime { get; set; }
 
-        [XmlElement(ElementName = "LyricsParts")]
-        public LyricsParts LyricsParts { get; set; }
+        [XmlArray(ElementName = "LyricsParts")]
+        public List<LyricsPart> LyricsParts { get; set; }
 
-        [XmlElement(ElementName = "ApplyRubies")]
-        public ApplyRubies ApplyRubies { get; set; }
+        [XmlArray(ElementName = "ApplyRubies")]
+        public List<RubyInfo> ApplyRubies { get; set; }
 
         [XmlElement(ElementName = "KaraokeFontIndex")]
         public int KaraokeFontIndex { get; set; }

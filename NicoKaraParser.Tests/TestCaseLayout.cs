@@ -11,7 +11,7 @@ namespace NicoKaraParser.Tests
         public void TestLayout()
         {
             var result = DecodeWithFile();
-            var firstLayout = result.KaraokeLayouts.KaraokeLayout.FirstOrDefault();
+            var firstLayout = result.KaraokeLayouts.FirstOrDefault();
 
             // Check has at least one font
             Assert.IsNotNull(firstLayout);
