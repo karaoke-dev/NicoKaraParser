@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Font.Brush
 {
     public enum BrushType
     {

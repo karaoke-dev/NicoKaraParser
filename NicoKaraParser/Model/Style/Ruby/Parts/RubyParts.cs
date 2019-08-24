@@ -1,6 +1,7 @@
 ﻿using System.Xml.Serialization;
+using NicoKaraParser.Model.Style.Part;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Style.Ruby.Parts
 {
     [XmlRoot(ElementName = "RubyParts")]
     public class RubyParts

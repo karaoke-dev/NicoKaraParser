@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
+using NicoKaraParser.Model.Title.Style;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Title
 {
     [XmlRoot(ElementName = "TitleInfo")]
     public class TitleInfo

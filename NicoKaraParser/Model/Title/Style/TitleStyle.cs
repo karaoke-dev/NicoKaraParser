@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Title.Style
 {
     [XmlRoot(ElementName = "TitleStyle")]
     public class TitleStyle

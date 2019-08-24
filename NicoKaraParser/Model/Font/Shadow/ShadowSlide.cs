@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Font.Shadow
 {
     [XmlRoot(ElementName = "ShadowSlide")]
     public class ShadowSlide

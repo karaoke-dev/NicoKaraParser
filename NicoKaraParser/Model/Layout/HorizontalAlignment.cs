@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Layout
 {
     public enum HorizontalAlignment
     {

@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
+using NicoKaraParser.Model.Style.Part;
+using NicoKaraParser.Model.Style.Ruby;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Style
 {
     [XmlRoot(ElementName = "KaraokeStyle")]
     public class KaraokeStyle

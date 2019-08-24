@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Font.Font
 {
     [XmlRoot(ElementName = "FontInfo")]
     public class FontInfo

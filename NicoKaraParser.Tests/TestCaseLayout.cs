@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NicoKaraParser.Model;
 using System.Linq;
+using NicoKaraParser.Model.Layout;
 
 namespace NicoKaraParser.Tests
 {

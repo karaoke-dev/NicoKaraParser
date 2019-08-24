@@ -1,7 +1,8 @@
 ﻿using System.Drawing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NicoKaraParser.Model;
 using System.Linq;
+using NicoKaraParser.Model.Font.Brush;
+using NicoKaraParser.Model.Font.Font;
 
 namespace NicoKaraParser.Tests
 {

@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Style.Part
 {
     [XmlRoot(ElementName = "LyricsPart")]
     public class LyricsPart

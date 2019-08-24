@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Linq;
 using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Font.Brush
 {
     [XmlRoot(ElementName = "BrushInfo")]
     public class BrushInfo

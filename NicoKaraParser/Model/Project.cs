@@ -1,5 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
+using NicoKaraParser.Model.Font;
+using NicoKaraParser.Model.Layout;
+using NicoKaraParser.Model.Style;
+using NicoKaraParser.Model.Title;
 
 namespace NicoKaraParser.Model
 {
