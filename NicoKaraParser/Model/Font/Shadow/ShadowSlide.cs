@@ -1,13 +1,13 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Font.Shadow
 {
     [XmlRoot(ElementName = "ShadowSlide")]
     public class ShadowSlide
     {
         [XmlElement(ElementName = "X")]
-        public string X { get; set; }
+        public int X { get; set; }
         [XmlElement(ElementName = "Y")]
-        public string Y { get; set; }
+        public int Y { get; set; }
     }
 }

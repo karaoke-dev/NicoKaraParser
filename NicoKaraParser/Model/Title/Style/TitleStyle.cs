@@ -1,15 +1,17 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Title.Style
 {
     [XmlRoot(ElementName = "TitleStyle")]
     public class TitleStyle
     {
         [XmlElement(ElementName = "Title")]
         public string Title { get; set; }
+
         [XmlElement(ElementName = "KaraokeFontIndex")]
-        public string KaraokeFontIndex { get; set; }
+        public int KaraokeFontIndex { get; set; }
+
         [XmlElement(ElementName = "Continuous")]
-        public string Continuous { get; set; }
+        public bool Continuous { get; set; }
     }
 }

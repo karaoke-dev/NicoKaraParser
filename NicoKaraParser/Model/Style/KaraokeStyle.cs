@@ -1,27 +1,38 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
+using NicoKaraParser.Model.Style.Part;
+using NicoKaraParser.Model.Style.Ruby;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Style
 {
     [XmlRoot(ElementName = "KaraokeStyle")]
     public class KaraokeStyle
     {
         [XmlElement(ElementName = "Kind")]
-        public string Kind { get; set; }
+        public KaraokeStyleKind Kind { get; set; }
+
         [XmlElement(ElementName = "ShowBeginTime")]
-        public string ShowBeginTime { get; set; }
+        public int ShowBeginTime { get; set; }
+
         [XmlElement(ElementName = "ShowEndTime")]
-        public string ShowEndTime { get; set; }
-        [XmlElement(ElementName = "LyricsParts")]
-        public LyricsParts LyricsParts { get; set; }
-        [XmlElement(ElementName = "ApplyRubies")]
-        public ApplyRubies ApplyRubies { get; set; }
+        public int ShowEndTime { get; set; }
+
+        [XmlArray(ElementName = "LyricsParts")]
+        public List<LyricsPart> LyricsParts { get; set; }
+
+        [XmlArray(ElementName = "ApplyRubies")]
+        public List<RubyInfo> ApplyRubies { get; set; }
+
         [XmlElement(ElementName = "KaraokeFontIndex")]
-        public string KaraokeFontIndex { get; set; }
+        public int KaraokeFontIndex { get; set; }
+
         [XmlElement(ElementName = "KaraokeLayoutIndex")]
-        public string KaraokeLayoutIndex { get; set; }
+        public int KaraokeLayoutIndex { get; set; }
+
         [XmlElement(ElementName = "PlainText")]
         public string PlainText { get; set; }
+
         [XmlElement(ElementName = "LineIndexInFile")]
-        public string LineIndexInFile { get; set; }
+        public int LineIndexInFile { get; set; }
     }
 }

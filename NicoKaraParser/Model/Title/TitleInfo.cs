@@ -1,23 +1,31 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
+using NicoKaraParser.Model.Title.Style;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Title
 {
     [XmlRoot(ElementName = "TitleInfo")]
     public class TitleInfo
     {
         [XmlElement(ElementName = "Name")]
         public string Name { get; set; }
+
         [XmlElement(ElementName = "KaraokeLayoutIndex")]
-        public string KaraokeLayoutIndex { get; set; }
+        public int KaraokeLayoutIndex { get; set; }
+
         [XmlElement(ElementName = "BeginTime")]
-        public string BeginTime { get; set; }
+        public int BeginTime { get; set; }
+
         [XmlElement(ElementName = "EndTime")]
-        public string EndTime { get; set; }
+        public int EndTime { get; set; }
+
         [XmlElement(ElementName = "LineInterval")]
-        public string LineInterval { get; set; }
+        public int LineInterval { get; set; }
+
         [XmlElement(ElementName = "ShowRuby")]
-        public string ShowRuby { get; set; }
-        [XmlElement(ElementName = "TitleStyles")]
-        public TitleStyles TitleStyles { get; set; }
+        public bool ShowRuby { get; set; }
+
+        [XmlArray(ElementName = "TitleStyles")]
+        public List<TitleStyle> TitleStyles { get; set; }
     }
 }

@@ -1,31 +1,41 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Layout
 {
     [XmlRoot(ElementName = "KaraokeLayout")]
     public class KaraokeLayout
     {
         [XmlElement(ElementName = "Name")]
         public string Name { get; set; }
+
         [XmlElement(ElementName = "Continuous")]
-        public string Continuous { get; set; }
+        public bool Continuous { get; set; }
+
         [XmlElement(ElementName = "HorizontalAlignment")]
-        public string HorizontalAlignment { get; set; }
+        public HorizontalAlignment HorizontalAlignment { get; set; }
+
         [XmlElement(ElementName = "HorizontalMargin")]
-        public string HorizontalMargin { get; set; }
+        public int HorizontalMargin { get; set; }
+
         [XmlElement(ElementName = "SmartHorizon")]
-        public string SmartHorizon { get; set; }
+        public SmartHorizon SmartHorizon { get; set; }
+
         [XmlElement(ElementName = "VerticalAlignment")]
-        public string VerticalAlignment { get; set; }
+        public VerticalAlignment VerticalAlignment { get; set; }
+
         [XmlElement(ElementName = "VerticalMargin")]
-        public string VerticalMargin { get; set; }
+        public int VerticalMargin { get; set; }
+
         [XmlElement(ElementName = "LyricsInterval")]
-        public string LyricsInterval { get; set; }
+        public int LyricsInterval { get; set; }
+
         [XmlElement(ElementName = "RubyInterval")]
-        public string RubyInterval { get; set; }
+        public int RubyInterval { get; set; }
+
         [XmlElement(ElementName = "RubyAlignment")]
-        public string RubyAlignment { get; set; }
+        public RubyAlignment RubyAlignment { get; set; }
+
         [XmlElement(ElementName = "RubyMargin")]
-        public string RubyMargin { get; set; }
+        public int RubyMargin { get; set; }
     }
 }

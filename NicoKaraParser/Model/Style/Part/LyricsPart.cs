@@ -1,14 +1,16 @@
 ﻿using System.Xml.Serialization;
 
-namespace NicoKaraParser.Model
+namespace NicoKaraParser.Model.Style.Part
 {
     [XmlRoot(ElementName = "LyricsPart")]
     public class LyricsPart
     {
         [XmlElement(ElementName = "BeginTime")]
-        public string BeginTime { get; set; }
+        public int BeginTime { get; set; }
+
         [XmlElement(ElementName = "EndTime")]
-        public string EndTime { get; set; }
+        public int EndTime { get; set; }
+
         [XmlElement(ElementName = "Lyrics")]
         public string Lyrics { get; set; }
     }
