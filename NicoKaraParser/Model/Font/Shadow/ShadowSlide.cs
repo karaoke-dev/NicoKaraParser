@@ -7,6 +7,7 @@ namespace NicoKaraParser.Model.Font.Shadow
     {
         [XmlElement(ElementName = "X")]
         public int X { get; set; }
+
         [XmlElement(ElementName = "Y")]
         public int Y { get; set; }
     }
